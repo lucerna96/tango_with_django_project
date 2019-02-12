@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
+{block title_block %}
+      About
+{% endblock %}
 
-<html>
-
-  <body>
+{% block body_block %}
     <div>
     <img src="{%static "images/chameleon.jpg" %}"
       alt="Picture of a chameleon" />
@@ -16,9 +16,4 @@
     <div>
       This tutorial has been put together by Luca
       </div>
-    <div>
-      <a href="/rango/">Index</a><bar />
-    </div>
-  </body>
-
-</html>
+{% endblock %}
